@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+    background-color: antiquewhite; /* Set the background color */
+    background-image: url('wbg.jpeg'); /* Set the background image using the url() function */
+    background-size: cover; /* Optionally, adjust background size */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white;
+
+}
+
+nav ul li{
+    padding:0 12px;
+    
+}
+
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+   
+
+}
+
+.container {
+    min-height: 60vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 55%;
+    margin: 10px auto;
+    border-radius: 12px;
+    padding:  10px; /* Adjusting padding for left and right sides */
+    background-image: url('backimg.jpeg');
+}
+
+
+.bottom{
+    position: sticky;
+    height: 150px;
+    background-color: black; 
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons{
+    color:white;
+    margin: top 14px;
+}
+#prog{
+  width:80vw;
+  text-align: center;
+  cursor:pointer;
+}
+
+.music{
+    text-align: center;
+    
+}
+
+.point{
+    cursor: pointer;
+}
+
+.songItems{
+   height:40px;
+   
+   width: auto;
+   display:flex;
+   background-color: white;
+   color:black;
+   margin: 15px 0;
+   justify-content:space-between;
+   align-items: center;
+   border-radius: 34px;;
+
+}
+
+.songItems img{
+  border-radius: 34px;
+  margin: 0 20px;
+}
+.songname, .playlist, .timestamp {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.songname {
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.playlist, .timestamp {
+    width: 20%;
+    text-align: right;
+}
+
+
+.timestamp{
+    height: fit-content;
+    width:auto;
+    margin: 0 40px;
+
+    cursor: pointer;
+}
+
+.timestamp img{
+    cursor: pointer;
+}
+.songItems {
+    display: flex;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+.timestamp {
+    margin-right: 10px; /* Adjust spacing between timestamp and play/pause button */
+}
+
+
+.songinfos{
+    position:absolute;
+    left:10vw;
+}
+
+.songinfos img{
+    opacity:0;
+    transition: opacity 0.8s ease-in;
+}
+
+.itemPlay{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1100px){
+    body{
+        background-color:antiquewhite ;
+    }
+}
